@@ -12,7 +12,7 @@ interface Props {
 export function Avatar({urlImage} : Props) {
     const { secondary80, secondary100 } = theme.colors;
     return(
-        <LinearGradient 
+    <LinearGradient 
         style={styles.container}
         colors={[secondary80, secondary100]}
     >
