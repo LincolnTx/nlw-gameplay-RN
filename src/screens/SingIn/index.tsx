@@ -4,12 +4,19 @@ import {
     Text,
     Image
  } from 'react-native';
+ import { useNavigation } from '@react-navigation/native';
 
 import { styles } from './styles';
 import IllustrationImg from '../../assets/illustration.png';
 import { ButtonIcon } from '../../components/ButtonIcon';
 
 export function SingIn() {
+    const navigation = useNavigation();
+    
+    function handleSingIn() {
+        navigation.navigate("Home");
+    }
+    
     return(
         <View style={styles.container}>           
             <Image source={IllustrationImg} 
@@ -27,7 +34,11 @@ export function SingIn() {
                     favoritos com seus amigos
                 </Text>
 
-                <ButtonIcon title="Entrar com Discord"  activeOpacity={0.7}/>
+                <ButtonIcon 
+                    title="Entrar com Discord"
+                    onPress={handleSingIn}
+                />
+                    
             </View>
         </View>
     );
