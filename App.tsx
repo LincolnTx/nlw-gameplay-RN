@@ -3,7 +3,7 @@ import { useFonts } from 'expo-font';
 import { StatusBar } from 'react-native'; 
 import  AppLoading from 'expo-app-loading';
 import { Inter_400Regular, Inter_500Medium } from '@expo-google-fonts/inter';
-import { Rajdhani_500Medium, Rajdhani_600SemiBold } from '@expo-google-fonts/rajdhani';
+import { Rajdhani_500Medium, Rajdhani_700Bold } from '@expo-google-fonts/rajdhani';
 
 import { Routes } from './src/routes';
 import { Background } from './src/components/Background';
@@ -13,7 +13,7 @@ export default function App() {
     Inter_400Regular,
     Inter_500Medium,
     Rajdhani_500Medium,
-    Rajdhani_600SemiBold
+    Rajdhani_700Bold
   });
   
   if (!fontsLoaded){

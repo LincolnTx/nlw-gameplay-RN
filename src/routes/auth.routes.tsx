@@ -12,7 +12,7 @@ export function AuthRoutes() {
             headerMode="none"
             screenOptions={{
                 cardStyle: {
-                    backgroundColor: 'trasnparent'
+                    backgroundColor: 'transparent'
                 }
             }}
         >
